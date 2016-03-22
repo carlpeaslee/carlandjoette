@@ -8,13 +8,13 @@
   </head>
   <body ng-controller="SuperController">
 
-    <div ng-repeat="student in studentArray">
-      <h3>{{student.name}}</h3>
+    <div ng-repeat="item in studentArray">
+      <h3>{{item.name}}</h3>
       <p>
-        {{student.github}}
+        <a href="{{item.github}}">GitHub</a>
       </p>
-      <img ng-src="{{student.linkedIn}}{{hash}}" alt="description"/>
-      
+      <img ng-src="{{item.linkedIn}}" alt="description"/>
+
     </div>
 
 
