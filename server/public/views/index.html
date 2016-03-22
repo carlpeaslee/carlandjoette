@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Carl and Joette</title>
+    <script src="/assets/vendors/angular.min.js"></script>
+    <script src="/assets/scripts/app.js"></script>
+  </head>
+  <body ng-controller="SuperController">
+
+    <div ng-repeat="student in studentArray">
+      <h3>{{student.name}}</h3>
+      <p>
+        {{student.github}}
+      </p>
+      <img ng-src="{{student.linkedIn}}{{hash}}" alt="description"/>
+      
+    </div>
+
+
+  </body>
+</html>
